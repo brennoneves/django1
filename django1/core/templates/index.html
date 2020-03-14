@@ -8,5 +8,31 @@
     <h1>Index</h1>
     <h2>{{curso}}</h2>
     <h2>{{outro}}</h2>
+    <h2>{{user}}</h2>
+    <h3>{{logado}}</h3>
+    <table>
+        <thead></
+            <tr>
+                <th>Produto</th>
+                <th>Preco</th>
+                <th>Qtde Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for produto in produtos %}
+            <tr>
+                <td><a href="{% url 'produto' produto.id %}">{{produto.nome}}</a></td>
+                <td>R$:{{produto.preco}}</td>
+                <td>{{produto.estoque}}</td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+
+
+    <span>{{logado}}</span>
 </body>
 </html>
