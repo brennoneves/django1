@@ -1,0 +1,13 @@
+instalar
+1 - pip install django
+2 - django-admin startproject nomeprojeto .
+3 - pip freeze > requirements.txt
+4 - django-admin startapp core
+
+rodar aplicação: python manage.py runserver
+
+deposi de criar os models rodar --> python manage.py makemigrations  e depois python manage.py migrate
+
+5 - python manage.py collectstatic --> usado para coletar os arquivos statics
+
+
